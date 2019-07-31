@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func getStarted(_ sender: Any) {
+        performSegue(withIdentifier: "fromHomeToOverview", sender: self)
+    }
+    
 }
 
