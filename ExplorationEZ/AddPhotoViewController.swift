@@ -8,27 +8,46 @@
 
 import UIKit
 
-class AddPhotoViewController: UIViewController {
+class AddPhotoViewController: UIViewController, UINavigationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    var captions : [Uh] = []
     
     @IBAction func goBackToPackingListNow(_ sender: Any) {
         performSegue(withIdentifier: "goBackToPackingListFromMedicine", sender: self)
     }
+
     
-   
+ 
     @IBOutlet weak var captionText: UITextField!
     
-    @IBAction func saveProgressButton(_ sender: UIButton) {
+    @IBAction func saveButtonPressed(_ sender: Any) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            let titleToSave = Title(entity: Title.entity(), insertInto: context)
+            
+            let titleToSave = Uh(entity: Uh.entity(), insertInto: context)
+            
             titleToSave.title = captionText.text
         }
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            
+            navigationController?.popViewController(animated: true)
+    }
+    
+        //navigationController?.popViewController(animated: true )
+    /*
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            let captionToSave = Uh(entity: Uh.entity(), insertInto: context)
+            
+            captionToSave.caption = captionText.text
+            
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            
+            navigationController?.popViewController(animated: true)*/
     }
     /*
     // MARK: - Navigation
@@ -40,4 +59,4 @@ class AddPhotoViewController: UIViewController {
     }
     */
 
-}
+

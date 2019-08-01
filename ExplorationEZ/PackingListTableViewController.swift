@@ -9,7 +9,9 @@
 import UIKit
 
 class PackingListTableViewController: UITableViewController {
-
+    
+    var captions : [Uh] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,11 +23,21 @@ class PackingListTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    func getTitles() {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            if let coreDataTitles = try? context.fetch(Uh.fetchRequest()) as? [Uh] {
+                captions = coreDataTitles
+                tableView.reloadData()
+            }
+        }
+    }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        getTitles()
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return captions.count
     }
     @IBAction func AddANewNecessity(_ sender: Any) {
         performSegue(withIdentifier: "goToNecessities", sender: self)
@@ -36,8 +48,11 @@ class PackingListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "hi"
+        
+        let cell = UITableViewCell ()
+        
+        let cellTitle = captions[indexPath.row]
+        cell.textLabel?.text = cellTitle.title
 
         // Configure the cell...
 
@@ -45,25 +60,28 @@ class PackingListTableViewController: UITableViewController {
     }
 
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
+            if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+                let titleToDelete = captions[indexPath.row]
+                context.delete(titleToDelete)
+                (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+                getTitles()
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -90,4 +108,5 @@ class PackingListTableViewController: UITableViewController {
     }
     */
 
+}
 }

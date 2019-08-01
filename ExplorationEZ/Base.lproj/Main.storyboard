@@ -46,55 +46,72 @@
             </objects>
             <point key="canvasLocation" x="-1252" y="-177"/>
         </scene>
-        <!--Packing List Table View Controller-->
-        <scene sceneID="o2v-3R-05X">
+        <!--Root View Controller-->
+        <scene sceneID="a9y-s8-isI">
             <objects>
-                <tableViewController id="ih4-f4-Iau" customClass="PackingListTableViewController" customModule="ExplorationEZ" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QTq-Fa-3GW">
+                <tableViewController id="2GR-MF-oqt" customClass="PackingListTableViewController" customModule="ExplorationEZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="amd-oJ-Otm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="tp6-EE-Thb">
+                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="u6p-ko-cxa">
                             <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="Packing List" id="WNi-rA-3uc">
-                                    <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="BIh-zf-I74">
+                                <navigationItem title="Packing List" id="Siu-sd-e89">
+                                    <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="Yhm-eX-36G">
                                         <connections>
-                                            <action selector="returnToOverviewFromPack:" destination="ih4-f4-Iau" id="ODY-kR-4bJ"/>
+                                            <action selector="returnToOverviewFromPack:" destination="2GR-MF-oqt" id="0Qa-LW-9xA"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="ydK-3b-1I2">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="GxD-lb-J1X">
                                         <connections>
-                                            <action selector="AddANewNecessity:" destination="ih4-f4-Iau" id="t1h-tM-sgc"/>
+                                            <action selector="AddANewNecessity:" destination="2GR-MF-oqt" id="efR-Xa-KM2"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7Ft-GQ-GZz">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="U9s-bV-gWw">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Ft-GQ-GZz" id="WJX-ti-mYo">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U9s-bV-gWw" id="exJ-hQ-KI1">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="ih4-f4-Iau" id="UGd-lG-Zrq"/>
-                            <outlet property="delegate" destination="ih4-f4-Iau" id="U6z-g1-dcq"/>
+                            <outlet property="dataSource" destination="2GR-MF-oqt" id="hTa-yb-USX"/>
+                            <outlet property="delegate" destination="2GR-MF-oqt" id="QsY-v6-Opa"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="YwF-GN-BRi"/>
                     <connections>
-                        <segue destination="oPd-cJ-8dN" kind="show" identifier="goToNecessities" id="I11-c5-2ry"/>
-                        <segue destination="I0l-E0-1Sj" kind="show" identifier="returnToOverviewFromPack" id="ppm-iG-sU5"/>
+                        <segue destination="I0l-E0-1Sj" kind="show" identifier="returnToOverviewFromPack" id="II0-lH-KZd"/>
+                        <segue destination="oPd-cJ-8dN" kind="show" identifier="goToNecessities" id="tCi-Cl-kJ3"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EeA-WH-ZyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1l7-op-woE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1393" y="558"/>
+            <point key="canvasLocation" x="-1475" y="558"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HdV-XT-aBN">
+            <objects>
+                <navigationController id="SmC-Sr-6gS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Agp-ZN-rkN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2GR-MF-oqt" kind="relationship" relationship="rootViewController" id="aNm-aU-MbA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNz-fS-xYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2123" y="558"/>
         </scene>
         <!--Add Photo View Controller-->
         <scene sceneID="HQk-gF-ycW">
@@ -111,7 +128,8 @@
                                     <navigationItem title="Add a Necessity" id="dvM-W2-z7i">
                                         <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="Jhh-QO-e5E">
                                             <connections>
-                                                <action selector="goBackToPackingListNow:" destination="oPd-cJ-8dN" id="1qo-ed-d3f"/>
+                                                <action selector="goBackToPackingListNow:" destination="oPd-cJ-8dN" id="gWb-Ei-mHP"/>
+                                                <segue destination="2GR-MF-oqt" kind="show" identifier="goBackToPackingListFromMedicine" id="BgA-wL-K2k"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -130,7 +148,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Save Progress"/>
                                 <connections>
-                                    <action selector="saveProgressButton:" destination="oPd-cJ-8dN" eventType="touchUpInside" id="dKb-fX-x23"/>
+                                    <action selector="saveButtonPressed:" destination="oPd-cJ-8dN" eventType="touchUpInside" id="ql2-dx-9cU"/>
+                                    <segue destination="2GR-MF-oqt" kind="show" id="3bf-9l-iFU"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcs-KC-eR5">
@@ -139,17 +158,13 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="captionText:" destination="oPd-cJ-8dN" eventType="editingDidEnd" id="iWn-gU-UNE"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oLJ-0t-hde"/>
                     </view>
                     <connections>
-                        <outlet property="captionText" destination="lcs-KC-eR5" id="Gha-dJ-7qN"/>
-                        <segue destination="ih4-f4-Iau" kind="show" identifier="goBackToPackingListFromMedicine" id="BHQ-QG-H4O"/>
+                        <outlet property="captionText" destination="lcs-KC-eR5" id="blf-bn-Whz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45f-qZ-JEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -231,6 +246,7 @@
                                 <state key="normal" title="Packing List"/>
                                 <connections>
                                     <action selector="packingListButton:" destination="I0l-E0-1Sj" eventType="touchUpInside" id="8md-GZ-UWA"/>
+                                    <segue destination="2GR-MF-oqt" kind="show" identifier="packingListScreenTo" id="jW0-Wm-YV6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OVERVIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnx-hE-oEs">
@@ -255,7 +271,6 @@
                     </view>
                     <connections>
                         <segue destination="s02-R9-Ztk" kind="show" identifier="goToTableView" id="cDm-Vm-297"/>
-                        <segue destination="ih4-f4-Iau" kind="show" identifier="packingListScreenTo" id="7RK-1G-gUA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ubD-FL-VXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,7 +279,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ppm-iG-sU5"/>
-        <segue reference="BHQ-QG-H4O"/>
+        <segue reference="II0-lH-KZd"/>
+        <segue reference="BgA-wL-K2k"/>
     </inferredMetricsTieBreakers>
 </document>
