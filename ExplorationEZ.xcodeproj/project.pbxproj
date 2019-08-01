@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18CADECF22F31B9800BFBAC2 /* ExplorePhillyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADECE22F31B9800BFBAC2 /* ExplorePhillyViewController.swift */; };
 		18CADED322F326E900BFBAC2 /* DesignatedAttractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED222F326E900BFBAC2 /* DesignatedAttractions.swift */; };
 		18CADED522F3275300BFBAC2 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED422F3275300BFBAC2 /* SampleData.swift */; };
 		18CADED922F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18CADECE22F31B9800BFBAC2 /* ExplorePhillyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePhillyViewController.swift; sourceTree = "<group>"; };
 		18CADED222F326E900BFBAC2 /* DesignatedAttractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignatedAttractions.swift; sourceTree = "<group>"; };
 		18CADED422F3275300BFBAC2 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignatedAttractionsUhViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */,
 				18D9A6DD22F22DE60083F5DA /* PackingListViewController.swift */,
 				18D9A6DB22F22DC30083F5DA /* OverviewViewController.swift */,
-				18CADECE22F31B9800BFBAC2 /* ExplorePhillyViewController.swift */,
 				18CADED222F326E900BFBAC2 /* DesignatedAttractions.swift */,
 				18CADED422F3275300BFBAC2 /* SampleData.swift */,
 				18D9A6D022F22BD00083F5DA /* Assets.xcassets */,
@@ -156,7 +153,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CADECF22F31B9800BFBAC2 /* ExplorePhillyViewController.swift in Sources */,
 				18D9A6DE22F22DE60083F5DA /* PackingListViewController.swift in Sources */,
 				18CADED322F326E900BFBAC2 /* DesignatedAttractions.swift in Sources */,
 				18D9A6C922F22BCF0083F5DA /* ViewController.swift in Sources */,

@@ -18,9 +18,6 @@ class OverviewViewController: UIViewController {
     @IBAction func packingListButton(_ sender: Any) {
         performSegue(withIdentifier: "packingListScreenTo", sender: self)
     }
-    @IBAction func explorePhillyButton(_ sender: Any) {
-        performSegue(withIdentifier: "explorePhillyScreenTo", sender: self)
-    }
     
     @IBAction func goToTableView(_ sender: Any) {
         performSegue(withIdentifier: "goToTableView", sender: self)
