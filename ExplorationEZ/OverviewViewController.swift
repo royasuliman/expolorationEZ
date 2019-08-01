@@ -15,8 +15,17 @@ class OverviewViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func packingListButton(_ sender: Any) {
+        performSegue(withIdentifier: "packingListScreenTo", sender: self)
+    }
+    @IBAction func explorePhillyButton(_ sender: Any) {
+        performSegue(withIdentifier: "explorePhillyScreenTo", sender: self)
+    }
     
-
+    @IBAction func goToTableView(_ sender: Any) {
+        performSegue(withIdentifier: "goToTableView", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

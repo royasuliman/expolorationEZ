@@ -15,6 +15,9 @@ class PackingListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func backButtonToOverview(_ sender: Any) {
+        performSegue(withIdentifier: "packingListScreen", sender: self)
+    }
     
 
     /*
