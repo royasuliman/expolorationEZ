@@ -19,7 +19,10 @@ class PackingListViewController: UIViewController {
         performSegue(withIdentifier: "packingListScreen", sender: self)
     }
     
-
+    @IBAction func addAPhoto(_ sender: Any) {
+        performSegue(withIdentifier: "goTakeAPhoto", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

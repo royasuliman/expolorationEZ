@@ -10,6 +10,8 @@
 		18CADED322F326E900BFBAC2 /* DesignatedAttractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED222F326E900BFBAC2 /* DesignatedAttractions.swift */; };
 		18CADED522F3275300BFBAC2 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED422F3275300BFBAC2 /* SampleData.swift */; };
 		18CADED922F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */; };
+		18CADEDB22F3435200BFBAC2 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADEDA22F3435200BFBAC2 /* AddPhotoViewController.swift */; };
+		18CADEDF22F3538400BFBAC2 /* PackingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADEDE22F3538400BFBAC2 /* PackingListTableViewController.swift */; };
 		18D9A6C722F22BCF0083F5DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9A6C622F22BCF0083F5DA /* AppDelegate.swift */; };
 		18D9A6C922F22BCF0083F5DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9A6C822F22BCF0083F5DA /* ViewController.swift */; };
 		18D9A6CC22F22BCF0083F5DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D9A6CA22F22BCF0083F5DA /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 		18CADED222F326E900BFBAC2 /* DesignatedAttractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignatedAttractions.swift; sourceTree = "<group>"; };
 		18CADED422F3275300BFBAC2 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignatedAttractionsUhViewController.swift; sourceTree = "<group>"; };
+		18CADEDA22F3435200BFBAC2 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		18CADEDE22F3538400BFBAC2 /* PackingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingListTableViewController.swift; sourceTree = "<group>"; };
 		18D9A6C322F22BCF0083F5DA /* ExplorationEZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExplorationEZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D9A6C622F22BCF0083F5DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D9A6C822F22BCF0083F5DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				18D9A6C622F22BCF0083F5DA /* AppDelegate.swift */,
 				18D9A6C822F22BCF0083F5DA /* ViewController.swift */,
 				18D9A6CA22F22BCF0083F5DA /* Main.storyboard */,
+				18CADEDE22F3538400BFBAC2 /* PackingListTableViewController.swift */,
+				18CADEDA22F3435200BFBAC2 /* AddPhotoViewController.swift */,
 				18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */,
 				18D9A6DD22F22DE60083F5DA /* PackingListViewController.swift */,
 				18D9A6DB22F22DC30083F5DA /* OverviewViewController.swift */,
@@ -160,7 +166,9 @@
 				18CADED922F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift in Sources */,
 				18D9A6C722F22BCF0083F5DA /* AppDelegate.swift in Sources */,
 				18D9A6CF22F22BCF0083F5DA /* ExplorationEZ.xcdatamodeld in Sources */,
+				18CADEDB22F3435200BFBAC2 /* AddPhotoViewController.swift in Sources */,
 				18CADED522F3275300BFBAC2 /* SampleData.swift in Sources */,
+				18CADEDF22F3538400BFBAC2 /* PackingListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

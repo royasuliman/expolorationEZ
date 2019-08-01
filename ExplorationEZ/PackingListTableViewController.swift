@@ -1,5 +1,5 @@
 //
-//  DesignatedAttractionsUhViewController.swift
+//  PackingListTableViewController.swift
 //  ExplorationEZ
 //
 //  Created by Apple on 8/1/19.
@@ -8,14 +8,8 @@
 
 import UIKit
 
-class DesignatedAttractionsUhViewController: UITableViewController {
+class PackingListTableViewController: UITableViewController {
 
-    var DesignatedAttractions = SampleData.generateDesignatedAttractionsData()
-    
-    @IBAction func goBackToOverview(_ sender: Any) {
-    performSegue(withIdentifier: "goBackToOverviewSeg", sender: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,36 +20,30 @@ class DesignatedAttractionsUhViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-        
-}
-
-    extension DesignatedAttractionsUhViewController {
     // MARK: - Table view data source
 
-    
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return DesignatedAttractions.count
+        return 10
     }
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "DesignatedAttractionsUhCell", for: indexPath)
-            let DesignatedAttraction = DesignatedAttractions[indexPath.row]
-            cell.textLabel?.text = DesignatedAttraction.title
-            cell.detailTextLabel?.text = DesignatedAttraction.subtitle
-            return cell
-        }
-}
+    @IBAction func AddANewNecessity(_ sender: Any) {
+        performSegue(withIdentifier: "goToNecessities", sender: self)
+    }
+    
+    @IBAction func returnToOverviewFromPack(_ sender: Any) {
+        performSegue(withIdentifier: "returnToOverviewFromPack", sender: self)
+    }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "hi"
 
         // Configure the cell...
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -102,4 +90,4 @@ class DesignatedAttractionsUhViewController: UITableViewController {
     }
     */
 
-
+}
