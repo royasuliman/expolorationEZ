@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1832F9C522F484F900535A6B /* PhiladelphiaZooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832F9C422F484F900535A6B /* PhiladelphiaZooViewController.swift */; };
+		1887D92822F46CCC00C2ADBE /* SavedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D92722F46CCC00C2ADBE /* SavedDetailsViewController.swift */; };
+		1887D92A22F4716B00C2ADBE /* PrototypeCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887D92922F4716B00C2ADBE /* PrototypeCellViewController.swift */; };
 		18CADED322F326E900BFBAC2 /* DesignatedAttractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED222F326E900BFBAC2 /* DesignatedAttractions.swift */; };
 		18CADED522F3275300BFBAC2 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED422F3275300BFBAC2 /* SampleData.swift */; };
 		18CADED922F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1832F9C422F484F900535A6B /* PhiladelphiaZooViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhiladelphiaZooViewController.swift; sourceTree = "<group>"; };
+		1887D92722F46CCC00C2ADBE /* SavedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDetailsViewController.swift; sourceTree = "<group>"; };
+		1887D92922F4716B00C2ADBE /* PrototypeCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeCellViewController.swift; sourceTree = "<group>"; };
 		18CADED222F326E900BFBAC2 /* DesignatedAttractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignatedAttractions.swift; sourceTree = "<group>"; };
 		18CADED422F3275300BFBAC2 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignatedAttractionsUhViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 				18D9A6C622F22BCF0083F5DA /* AppDelegate.swift */,
 				18D9A6C822F22BCF0083F5DA /* ViewController.swift */,
 				18D9A6CA22F22BCF0083F5DA /* Main.storyboard */,
+				1832F9C422F484F900535A6B /* PhiladelphiaZooViewController.swift */,
+				1887D92922F4716B00C2ADBE /* PrototypeCellViewController.swift */,
+				1887D92722F46CCC00C2ADBE /* SavedDetailsViewController.swift */,
 				18CADEDE22F3538400BFBAC2 /* PackingListTableViewController.swift */,
 				18CADEDA22F3435200BFBAC2 /* AddPhotoViewController.swift */,
 				18CADED822F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift */,
@@ -161,6 +170,7 @@
 			files = (
 				18D9A6DE22F22DE60083F5DA /* PackingListViewController.swift in Sources */,
 				18CADED322F326E900BFBAC2 /* DesignatedAttractions.swift in Sources */,
+				1887D92822F46CCC00C2ADBE /* SavedDetailsViewController.swift in Sources */,
 				18D9A6C922F22BCF0083F5DA /* ViewController.swift in Sources */,
 				18D9A6DC22F22DC30083F5DA /* OverviewViewController.swift in Sources */,
 				18CADED922F330CA00BFBAC2 /* DesignatedAttractionsUhViewController.swift in Sources */,
@@ -169,6 +179,8 @@
 				18CADEDB22F3435200BFBAC2 /* AddPhotoViewController.swift in Sources */,
 				18CADED522F3275300BFBAC2 /* SampleData.swift in Sources */,
 				18CADEDF22F3538400BFBAC2 /* PackingListTableViewController.swift in Sources */,
+				1832F9C522F484F900535A6B /* PhiladelphiaZooViewController.swift in Sources */,
+				1887D92A22F4716B00C2ADBE /* PrototypeCellViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

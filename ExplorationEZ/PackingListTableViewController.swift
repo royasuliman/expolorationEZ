@@ -58,9 +58,20 @@ class PackingListTableViewController: UITableViewController {
 
         return cell
     }
-
-
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailSegue", sender: captions[indexPath.row])
+    } //end of func tableView
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue" {
+            if let photoDetailView = segue.destination as? SavedDetailsViewController{
+                if let photoToSend = sender as? Uh{
+                photoDetailView.caption = photoToSend
+                }// end of if let photoToSend
+            }//end of if let photoDetailView
+        }// end of if segue.identifier
+    } //end of func prepare
+
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.

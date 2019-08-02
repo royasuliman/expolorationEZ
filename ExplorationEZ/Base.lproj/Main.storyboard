@@ -18,24 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyK-9v-aGX">
-                                <rect key="frame" x="144" y="428" width="126" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to ExplorationEZ: Philadelphia! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpF-dr-nVB">
+                                <rect key="frame" x="9" y="250" width="397" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Get Started!"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyK-9v-aGX">
+                                <rect key="frame" x="121" y="520" width="172" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="29"/>
+                                <state key="normal" title="Get Started!">
+                                    <color key="titleColor" red="0.91714173555374146" green="0.97386342287063599" blue="0.97415119409561157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="getStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EiD-yL-VyG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to ExplorationEZ: Philadelphia! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpF-dr-nVB">
-                                <rect key="frame" x="28" y="326" width="359" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.6126115480077744" green="0.67633624172933726" blue="0.78232270077720201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -44,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1252" y="-177"/>
+            <point key="canvasLocation" x="-1252.1739130434783" y="-177.45535714285714"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="a9y-s8-isI">
@@ -54,17 +56,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="u6p-ko-cxa">
-                            <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                        <color key="separatorColor" red="0.36202415490000001" green="0.47268657720000001" blue="0.61439064590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.36202415490000001" green="0.47268657720000001" blue="0.61439064590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="bze-C0-asZ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="0.52211910106887649" green="0.68171885064280136" blue="0.88608753709170984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <items>
-                                <navigationItem title="Packing List" id="Siu-sd-e89">
+                                <navigationItem title="Packing List" id="o5H-QJ-dwp">
                                     <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="Yhm-eX-36G">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="returnToOverviewFromPack:" destination="2GR-MF-oqt" id="0Qa-LW-9xA"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem key="rightBarButtonItem" systemItem="add" id="GxD-lb-J1X">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="AddANewNecessity:" destination="2GR-MF-oqt" id="efR-Xa-KM2"/>
                                         </connections>
@@ -74,12 +81,15 @@
                         </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="U9s-bV-gWw">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U9s-bV-gWw" id="exJ-hQ-KI1">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="1TF-yo-u9Z" kind="show" identifier="detailSegue" id="Jyw-bj-dr7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -95,7 +105,49 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1l7-op-woE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1475" y="558"/>
+            <point key="canvasLocation" x="-1475.3623188405797" y="557.8125"/>
+        </scene>
+        <!--Saved Details View Controller-->
+        <scene sceneID="uVn-Nf-uHR">
+            <objects>
+                <viewController id="1TF-yo-u9Z" customClass="SavedDetailsViewController" customModule="ExplorationEZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ipA-s9-iuB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="UGR-nr-ede">
+                                <rect key="frame" x="87" y="290" width="240" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mm4-Y5-WPG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="List" id="cO0-de-6pq"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvc-gH-9BM">
+                                <rect key="frame" x="186" y="200" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9YE-eH-8sA"/>
+                    </view>
+                    <connections>
+                        <outlet property="newCaption" destination="Nvc-gH-9BM" id="FcR-zk-xnv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YgF-Qj-Ysp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1730.4347826086957" y="1302.4553571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HdV-XT-aBN">
@@ -124,9 +176,11 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gbc-4S-J5s">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.49350856950213956" green="0.64436274040659969" blue="0.83753264722279797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Add a Necessity" id="dvM-W2-z7i">
                                         <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="Jhh-QO-e5E">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="goBackToPackingListNow:" destination="oPd-cJ-8dN" id="gWb-Ei-mHP"/>
                                                 <segue destination="2GR-MF-oqt" kind="show" identifier="goBackToPackingListFromMedicine" id="BgA-wL-K2k"/>
@@ -135,28 +189,30 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Add item" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-75-Rdi">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Add text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-75-Rdi">
                                 <rect key="frame" x="32" y="284" width="351" height="443"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JH-hu-ic4">
-                                <rect key="frame" x="135" y="769" width="154" height="42"/>
+                                <rect key="frame" x="187" y="776" width="61" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Save Progress"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                <state key="normal" title="Save ">
+                                    <color key="titleColor" red="0.31460628341869856" green="0.41077415765508629" blue="0.53391784797253883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="saveButtonPressed:" destination="oPd-cJ-8dN" eventType="touchUpInside" id="ql2-dx-9cU"/>
                                     <segue destination="2GR-MF-oqt" kind="show" id="3bf-9l-iFU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcs-KC-eR5">
-                                <rect key="frame" x="159" y="178" width="97" height="45"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcs-KC-eR5">
+                                <rect key="frame" x="137" y="178" width="161" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -169,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45f-qZ-JEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-729" y="558"/>
+            <point key="canvasLocation" x="-730.43478260869574" y="557.8125"/>
         </scene>
         <!--Designated Attractions Uh View Controller-->
         <scene sceneID="tCi-ZI-3xF">
@@ -179,12 +235,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <navigationBar key="tableFooterView" contentMode="scaleToFill" id="LcG-Ao-Rbs">
-                            <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="9Dx-4k-LUB">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="0.52211910110000004" green="0.68171885060000004" blue="0.88608753709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <items>
-                                <navigationItem title="Explore Philadelphia!" id="XTN-uI-zpP">
+                                <navigationItem title="Explore Philadelphia!" id="2gg-AB-XrW">
                                     <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="JeJ-c9-nrj">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="goBackToOverview:" destination="s02-R9-Ztk" id="EPa-QG-xwp"/>
                                         </connections>
@@ -194,7 +252,7 @@
                         </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DesignatedAttractionsUhCell" textLabel="K1P-gl-Ig9" detailTextLabel="neE-Gz-5vo" style="IBUITableViewCellStyleSubtitle" id="y2A-Ee-rLx">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y2A-Ee-rLx" id="lKi-po-8kC">
                                     <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
@@ -216,6 +274,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="YeL-el-hFn" kind="show" id="7CF-QX-fOA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -225,11 +286,79 @@
                     </tableView>
                     <connections>
                         <segue destination="I0l-E0-1Sj" kind="show" identifier="goBackToOverviewSeg" id="sco-iH-FRD"/>
+                        <segue destination="YeL-el-hFn" kind="show" id="kgE-sW-KCp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="084-i0-YcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="558"/>
+            <point key="canvasLocation" x="253.62318840579712" y="557.8125"/>
+        </scene>
+        <!--Philadelphia Zoo View Controller-->
+        <scene sceneID="dVu-Jm-wic">
+            <objects>
+                <viewController id="YeL-el-hFn" customClass="PhiladelphiaZooViewController" customModule="ExplorationEZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CYQ-W3-KdI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I52-mU-kU3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.49350856949999999" green="0.64436274039999997" blue="0.83753264719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Philadelphia Zoo" id="2fm-Q3-RT6">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="wRQ-gV-prP">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="kajsdhfsk:" destination="9nC-dL-cIh" id="qWn-IT-RYh"/>
+                                                <segue destination="s02-R9-Ztk" kind="show" id="2L4-N9-DPA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-gray-background" translatesAutoresizingMaskIntoConstraints="NO" id="C36-jY-rOR">
+                                <rect key="frame" x="-191" y="117" width="795" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ie-bg-Ayc">
+                                <rect key="frame" x="125" y="746" width="163" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                <state key="normal" title="View In Maps">
+                                    <color key="titleColor" red="0.31460628340000002" green="0.41077415769999998" blue="0.53391784799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMeWhere:" destination="YeL-el-hFn" eventType="touchUpInside" id="TL6-1t-mJw"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hero" translatesAutoresizingMaskIntoConstraints="NO" id="PoK-we-Jfj">
+                                <rect key="frame" x="43" y="132" width="326" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vOw-3V-yYd">
+                                <rect key="frame" x="65" y="418" width="283" height="282"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">
+America's first zoo is a must visit while in Philly! Home to a wide variety of unique and adorable animals, it's fun for all ages. The zoo is fully wheelchair accessible and rents manual wheelchairs as well as electric scooters!
+</string>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rpY-Qm-4Fl"/>
+                    </view>
+                    <connections>
+                        <segue destination="s02-R9-Ztk" kind="show" identifier="goToDA" id="jAD-uf-OV4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syt-XY-0vp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9nC-dL-cIh" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1005.7971014492755" y="557.8125"/>
         </scene>
         <!--Overview View Controller-->
         <scene sceneID="83m-X5-rjq">
@@ -240,27 +369,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFj-d0-wkH">
-                                <rect key="frame" x="145" y="428" width="125" height="41"/>
+                                <rect key="frame" x="113" y="440" width="183" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Packing List"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="31"/>
+                                <state key="normal" title="Packing List">
+                                    <color key="titleColor" red="0.3620241548712238" green="0.47268657717846102" blue="0.61439064592895121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="packingListButton:" destination="I0l-E0-1Sj" eventType="touchUpInside" id="8md-GZ-UWA"/>
                                     <segue destination="2GR-MF-oqt" kind="show" identifier="packingListScreenTo" id="jW0-Wm-YV6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OVERVIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnx-hE-oEs">
-                                <rect key="frame" x="116" y="293" width="182" height="45"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-gray-background" translatesAutoresizingMaskIntoConstraints="NO" id="poW-0k-LBj">
+                                <rect key="frame" x="-70" y="102" width="554" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OVERVIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf0-BB-q4p">
+                                <rect key="frame" x="84" y="198" width="241" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7h-su-jFa">
-                                <rect key="frame" x="89" y="539" width="236" height="51"/>
+                                <rect key="frame" x="2" y="515" width="412" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Explore Philadelphia!"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                <state key="normal" title="Explore Philadelphia!">
+                                    <color key="titleColor" red="0.36202415490000001" green="0.47268657720000001" blue="0.61439064590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="goToTableView:" destination="I0l-E0-1Sj" eventType="touchUpInside" id="QgJ-uV-ZgX"/>
                                 </connections>
@@ -275,11 +412,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ubD-FL-VXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-614" y="-177"/>
+            <point key="canvasLocation" x="-614.49275362318849" y="-177.45535714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blue-gray-background" width="1920" height="1440"/>
+        <image name="hero" width="1600" height="1200"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="II0-lH-KZd"/>
-        <segue reference="BgA-wL-K2k"/>
+        <segue reference="sco-iH-FRD"/>
+        <segue reference="kgE-sW-KCp"/>
+        <segue reference="jAD-uf-OV4"/>
+        <segue reference="3bf-9l-iFU"/>
     </inferredMetricsTieBreakers>
 </document>
